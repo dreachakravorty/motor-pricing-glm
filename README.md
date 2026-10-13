@@ -1,8 +1,23 @@
-# Motor Pricing GLM
 
-A claim frequency and severity pricing model for French motor third-party liability insurance, built with generalised linear models in Python (pandas, statsmodels, matplotlib).
+# Motor Insurance Pricing | Frequency GLMs
 
-**Status:** steps 1–3 of 9 are complete (data, EDA, frequency model). The severity model is next.
+An exploratory actuarial pricing analysis of French motor third-party liability insurance using Python and generalized linear models (GLMs).
+
+This project investigates how driver and vehicle characteristics relate to claim frequency, comparing Poisson and negative binomial models.
+
+## Key Findings
+
+- **Dataset:** Approximately 678,000 motor insurance policies.
+- **Model comparison:** Negative binomial AIC of 224,331 versus 224,791 for Poisson.
+- **Holdout calibration:** 7,262 predicted claims versus 7,239 observed for the negative binomial model.
+- **Rating factors:** The unadjusted 2.4x young-driver frequency relativity declined to approximately 1.05x after controlling for other variables.
+
+## Project Status
+
+**Completed:** Data cleaning, exploratory analysis, claim frequency GLMs, and initial holdout evaluation.
+
+**In progress:** Severity modeling, pure premium estimation, further rating relativity analysis, and additional model validation.
+
 
 ## Data
 
